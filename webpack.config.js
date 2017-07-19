@@ -15,7 +15,7 @@ module.exports = function (env) {
     switch (name) {
         default:
             options = {
-                entry: path.join(__dirname, name, 'src', entry),
+                entry: path.join(__dirname, name, 'build', entry),
                 output: {
                     path: path.join(__dirname, name, 'dist'),
                     filename: "bundle.js"
