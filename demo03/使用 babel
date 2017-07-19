@@ -1,0 +1,10 @@
+安装 npm i babel-loader babel-core babel-preset-es2015 -D
+
+配置 loaders
+{test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/}
+
+配置 babelrc
+{
+  "presets": ['es2015']
+}
+
