@@ -1,4 +1,4 @@
-使用 style-loader和css-loader
+使用 style-loader 和 css-loader
 
 安装 npm i style-loader css-loader -D
 

@@ -508,13 +508,10 @@ function updateLink (link, options, obj) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-
-
 __webpack_require__(3);
 __webpack_require__(6);
 
-var el = document.createElement('div');
+let el = document.createElement('div');
 el.innerHTML = 'hello webpack';
 document.body.appendChild(el);
 
@@ -539,8 +536,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./1.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./1.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js!./1.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!./1.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -679,8 +676,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js!./2.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js!./2.css");
+		module.hot.accept("!!../node_modules/css-loader/index.js!./2.css", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!./2.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
