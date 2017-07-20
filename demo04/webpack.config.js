@@ -1,23 +1,19 @@
 let path = require('path');
 
 module.exports = function (env) {
-    let argv = JSON.parse(process.env['npm_config_argv']) || {},
-        cooked = argv['cooked'] || [],
-        options,
-        type = cooked[1] || '',
-        name = cooked[2] || '',
-        entry = cooked[3] || 'entry';
-    name = name.replace(/-/g, '');
-    entry = entry.replace(/-/g, '');
+    let cooked = (JSON.parse(process.env['npm_config_argv']) || {})['cooked'];
+    let [action = '', type = '', name = '', entry = 'entry'] = cooked.map((a) => a.replace(/-/g, ''));
+    let options;
+    if(action !== 'run') throw new Error('[Error] Please configure scripts!');
 
     console.log('[Build] ' + name);
 
     switch (name) {
         default:
             options = {
-                entry: path.join(__dirname, name, 'build', entry),
+                entry: path.join(__dirname, name, entry),
                 output: {
-                    path: path.join(__dirname, name, 'dist'),
+                    path: path.join(__dirname, name),
                     filename: "bundle.js"
                 },
                 module: {
