@@ -1,7 +1,7 @@
-var path = require('path');
+let path = require('path');
 
 module.exports = function (env) {
-    var argv = JSON.parse(process.env['npm_config_argv']) || {},
+    let argv = JSON.parse(process.env['npm_config_argv']) || {},
         cooked = argv['cooked'] || [],
         options,
         type = cooked[1] || '',

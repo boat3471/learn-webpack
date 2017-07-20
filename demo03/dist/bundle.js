@@ -65,35 +65,26 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hello__ = __webpack_require__(1);
 
 
-var _hello = __webpack_require__(1);
-
-var _hello2 = _interopRequireDefault(_hello);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var el = document.createElement('div');
-el.innerHTML = '<div>hello webpack</div>' + _hello2.default.a + _hello2.default.b;
+let el = document.createElement('div');
+el.innerHTML = '<div>hello webpack</div>' + __WEBPACK_IMPORTED_MODULE_0__hello__["a" /* default */].a + __WEBPACK_IMPORTED_MODULE_0__hello__["a" /* default */].b;
 document.body.appendChild(el);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
+/* harmony default export */ __webpack_exports__["a"] = ({
     a: 1,
     b: 2
-};
+});
 
 /***/ })
 /******/ ]);

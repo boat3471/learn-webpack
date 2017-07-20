@@ -695,7 +695,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body{\r\n    color: #fff;\r\n    font-size:  48px;\r\n    text-shadow: 2px 2px 5px #000;\r\n}", ""]);
+exports.push([module.i, "body{\r\n    color: #fff;\r\n    font-size:  100px;\r\n    text-shadow: 2px 2px 5px #000;\r\n}", ""]);
 
 // exports
 
