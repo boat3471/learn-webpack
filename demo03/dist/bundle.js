@@ -65,26 +65,49 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hello__ = __webpack_require__(1);
 
 
-let el = document.createElement('div');
-el.innerHTML = '<div>hello webpack</div>' + __WEBPACK_IMPORTED_MODULE_0__hello__["a" /* default */].a + __WEBPACK_IMPORTED_MODULE_0__hello__["a" /* default */].b;
+var _hello = __webpack_require__(1);
+
+var _hello2 = _interopRequireDefault(_hello);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var h = new _hello2.default();
+
+var el = document.createElement('div');
+el.innerHTML = '<div>hello webpack</div>' + h.a + h.b;
 document.body.appendChild(el);
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = ({
-    a: 1,
-    b: 2
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
 });
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var a = [1, 2, 3];
+var b = a.map(function (n) {
+    return n * 2;
+});
+
+var hello = function hello() {
+    _classCallCheck(this, hello);
+
+    this.a = a;
+    this.b = b;
+};
+
+exports.default = hello;
 
 /***/ })
 /******/ ]);
