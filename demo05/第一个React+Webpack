@@ -1,0 +1,44 @@
+1. 创建 package.json 文件
+2. 创建 webpack.config.js
+3. 安装 webpack (全局 + Dev)
+    npm i webpack webpack-dev-server -g
+    npm i webpack webpack-dev-server -D
+
+4. 安装配置 babel 编译器
+
+    npm i babel-core babel-loader -D
+    npm i babel-preset-es2015 babel-preset-react -D
+
+    创建并配置 .babelrc 文件
+    {
+        "presets": ["es2015", "react"]
+    }
+
+5. 安装 eslint 代码检查器, 在多人开始时检查代码, 使其代码风格最大可能的保持一致
+    [可选]
+
+    npm i eslint eslint-loader -D
+    npm i eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y -D
+
+    创建并配置 .eslintrc 文件
+    {
+        "extends": "airbnb",
+        "rules": {
+            "comma-dangle": ["error", "never"]
+        }
+    }
+
+6. 安装插件
+    a). html-webpack-plugin 可以自动生成HTML
+        npm i html-webpack-plugin -D
+
+
+7. 安装 react
+    npm i react react-dom --save
+
+8. 创建 react 组件
+
+
+
+
+
