@@ -1,0 +1,21 @@
+{
+  "name": "demo08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist -G",
+    "eslint": "eslint src",
+    "build": "",
+    "dev": "",
+    "prod": ""
+  },
+  "author": "xinwenchao",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-loader": "^1.9.0",
+    "rimraf": "^2.6.1"
+  }
+}
