@@ -1,0 +1,100 @@
+@import "./src/scss/lib/fun.scss";
+.fixed-gg-module{
+	position: relative;
+	.gg-head{
+		height: 70px;
+		border-bottom: 1px solid #d9d9d9;
+		position: relative;
+		z-index: 4;
+		padding: 0 10px;
+		padding-bottom: 15px;
+		.img-full-box{
+			width: 70px;
+			height: 70px;
+			@include absolute(left,top,10px,-15px);
+			img{height: 100%;}
+		}
+		.shop-desc{
+			padding-left: 75px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.title{
+				@include textover();
+				line-height: 30px;
+			}
+			.unit{
+				font-size: 12px;
+				.num{font-size: 16px;color: #f54741;}
+			}
+		}
+	}
+	.close-gg{
+		width: 40px;
+		height: 40px;
+		@include absolute(right,top,15px,-24px);
+		background: #ffffff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.close-icon{height: 16px;width: 16px;}
+	}
+	.gg-container{
+		max-height: 192px;
+		overflow-y: auto;
+		li{
+			display: flex;
+			height: 64px;
+			border-bottom: 1px solid $bordercolor;
+			padding: 5px 10px;
+			display: flex;
+			justify-content: space-between;
+			font-size: 12px;
+			.m-left{
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				p{line-height: 27px;}
+				strong{margin-right: 4px;}
+			}
+			.m-right{
+				width: 100px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				.money{color: #f54741;text-align: right;}
+				.by-group{
+					border: 1px solid $bordercolor;
+					border-radius: 3px;
+					display: flex;
+					height: 32px;
+					span{
+						width: 30px;
+						height: 100%;
+						font-weight: bold;
+						font-size: 20px;
+						text-align: center;
+						line-height: 30px;
+					}
+					.reduce{border-right: 1px solid $bordercolor;}
+					.add{border-left: 1px solid $bordercolor;}
+					input{width: 40px;border: none;height: 100%;text-align: center;font-weight: bold;font-size: 14px;}
+				}
+			}
+		}
+	}
+	.total-shop{
+		font-size: 12px;
+		padding: 20px 10px 0;
+		p{line-height: 28px;
+			&>span{margin-right: 10px;}
+			i{color: #f54741;}
+		}
+	}
+	.btn-group{
+		background: #f54741;
+		color: #ffffff;
+	}
+}

@@ -1,0 +1,43 @@
+地址
+    http://www.beta.ule.com/app/yzg/dhh/index.html
+
+
+UI 控件
+
+    https://mobile.ant.design/docs/react/introduce
+
+beta 批销登陆地址
+
+    https://zone.beta.ule.com/fxZone/index.do
+	hzhyyy tester   hzh001nz / tester
+
+PSD :
+U:\UED\DRM\UI_review\邮乐2017\批销\批销PC端\订货会\订货会\0614
+
+
+
+
+商品列表（包含关键字和品牌搜索）
+http://wholesale.beta.ule.com/fxYzgApi/activityList.do?zoneId=7&keyword=红牛&branId=6602
+品牌
+http://wholesale.beta.ule.com/fxYzgApi/activityBrand.do?zoneId=7
+添加购物车
+http://wholesale.beta.ule.com/fxYzgApi/activityAddCart.do?cartType=21&listingId=599541&itemdetail=59954101|10&activityId=11122&zoneId=7
+查询购物车
+http://wholesale.beta.ule.com/fxYzgApi/activitySelCart.do?zoneId=7&cartType=21&activityId=11122
+更新购物车
+http://wholesale.beta.ule.com/fxYzgApi/activityUpdateCart.do?cartType=21&listingId=599541&itemId=59954101&activityId=11122&zoneId=7&itemCount=8
+删除购物车
+http://wholesale.beta.ule.com/fxYzgApi/activityDelCart.do?cartType=21&activityId=11122&zoneId=7&data=59954101:599541
+
+@军哥、
+还差你个多规格接口没写完～～
+返回字断你先看下这份wiki，参数不明白先问我～～
+http://wiki.uletm.com/pages/viewpage.action?pageId=18189544
+
+
+purchaseStartTime ：线下订货会开始时间 purchaseEndTime:	线下订货会结束时间  purchaseDesc :订货会描述
+listName : 商品名称   limitNum:起售数
+
+
+

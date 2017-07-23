@@ -1,0 +1,85 @@
+@import "./fun.scss";
+.fixed{
+	width: 100%;
+	position: fixed;
+	left: 0;
+}
+.bgsize{
+	background-size: 100% 100%;
+}
+.fixed-top{
+	@extend .fixed;
+	top: 0;
+}
+.fixed-bottom{
+	@extend .fixed;
+	bottom: 0;
+}
+.pt-50{
+	padding-top: 50px;
+}
+.header{
+	height: 50px;
+	width: 100%;
+	background: #db150c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	z-index: 100;
+	@extend .fixed-top;
+	.back-box,.share-box{
+		width: 40px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.share-box{
+		@include absolute(right,top);
+		padding-right: 15px;
+		i{
+			width: 25px;
+			height: 25px;
+			background-image: url(../assets/share.png);
+			@extend .bgsize;
+		}
+	}
+	.back-box{
+		padding-left: 15px;
+		@include absolute(left,top);
+		i{
+			width: 16px;
+			height: 22px;
+		}
+	}
+	.title{
+		font-size: 16px;
+	}
+}
+.img-full-box{
+	width: 100%;
+	img{display: block;width: 100%;}
+}
+.triangle{
+	width: 0;
+	height: 0;
+	border: 5px solid transparent;
+	border-top-color: #ffffff;
+}
+.btn-group{
+	display: flex;
+	height: 40px;
+	.btn{
+		flex: 1;
+		line-height: 40px;
+		height: 100%;
+		text-align: center;
+	}
+}
+
+.flex-1{
+	flex: 1;
+}
+.text-over-1{
+	@include textover();
+}

@@ -1,0 +1,14 @@
+$bordercolor : #d9d9d9;
+
+@mixin absolute($x,$y,$px1 : 0,$px2: 0){
+	position: absolute;
+	#{$x} : #{$px1};
+	#{$y} : #{$px2};
+}
+@mixin textover($line:1){
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical;
+}

@@ -1,0 +1,38 @@
+@import "./lib/reset.scss";
+@import "./lib/glo.scss";
+@import "./lib/fun.scss";
+//png
+.horn-icon{
+	@extend .bgsize;
+	background-image: url(../assets/horn.png);
+}
+.back-icon{
+	background-image: url(../assets/back-web.png);
+	@extend .bgsize;
+}
+.s-search-icon{
+	background-image: url(../assets/search-icon.png);
+	@extend .bgsize;
+}
+.trash-icon{
+	background-image: url(../assets/trash.png);
+	@extend .bgsize;
+}
+.select-icon{
+	background-image: url(../assets/select.png);
+	@extend .bgsize;
+}
+.close-icon{
+	@extend .bgsize;
+	background-image: url(../assets/close.png);
+}
+
+
+body{
+	background: #ffffff !important;
+	#rootApp{font-family: "Microsoft YaHei";font-size: 14px;color: #333333;}
+}
+.size-16{font-size: 16px;}
+
+
+.test-page{bottom: 0;top: 0;}
